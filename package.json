@@ -1,0 +1,9 @@
+{
+  "name": "shot-placement-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"build":"esbuild src/editor.js --bundle --minify --format=esm --outfile=dist/editor.js"},
+  "dependencies": {"three":"0.187.0"},
+  "devDependencies": {"esbuild":"0.28.1"}
+}

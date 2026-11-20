@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>컷 배치 편집기 · 이지원</title><link rel="stylesheet" href="./style.css"></head>
+<body><main><header><span>이지원 / 영상 편집 도구</span><a href="https://github.com/wwk1tten/shot-placement-editor">코드 보기 ↗</a></header>
+<h1>컷 배치 편집기</h1><p class="intro">화살표를 끌어 도형을 옮겨 보세요. 두 컷의 위치는 따로 저장됩니다.</p>
+<div class="frame"><div class="viewport"><div class="tabs" role="group" aria-label="편집할 컷"><button data-shot="A" aria-pressed="true">컷 A</button><button data-shot="B" aria-pressed="false">컷 B</button></div><canvas aria-label="세 축의 화살표가 달린 3D 도형"></canvas></div>
+<aside><small>INSPECTOR</small><h2 id="shape">정육면체</h2><fieldset><legend>위치</legend><label>X<input id="x" type="number" step="0.1"></label><label>Y<input id="y" type="number" step="0.1"></label><label>Z<input id="z" type="number" step="0.1"></label></fieldset><button id="reset">이 컷 위치 초기화</button><p id="status" role="status"></p></aside></div>
+</main><script type="module" src="./dist/editor.js"></script></body></html>
